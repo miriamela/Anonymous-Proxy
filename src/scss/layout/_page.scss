@@ -1,0 +1,6 @@
+body {
+  font-family: $primary-font;
+  & .header, .hero, .info, .purchase, .footer{
+    border: 1px solid red;
+  }
+}
