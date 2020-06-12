@@ -1,5 +1,22 @@
-.page__header {
-  display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+.menu-hamburguer{
+  position:fixed;
+  top: 0;
+  background-color: $primary-blue;
+  width: 44px;
+  height: 44px;
+  z-index: 1;
+  & .menu{
+     border: 1px solid red;
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     padding: 13px;
+    & img{
+      width: 16px;
+      height: 14px;
+    }
+    
+  }
+
+
 }
