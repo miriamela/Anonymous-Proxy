@@ -5,8 +5,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    flex-direction: column;
+    @include flexColumn;
     justify-content: flex-end;
     align-items: center;
     & h1{
@@ -17,24 +16,29 @@
         font-size: 42px;
         font-family: $primary-font;
         text-transform: uppercase;
+        line-height: 55px;
+        margin-bottom: 10px;
 
         & span{
             display: block;
         } 
     }
     & h2{
+        display: block;
         text-align: center;
         border: 1px solid green;
         color: $primary-light;
+        margin-bottom: 45px;
+        font-family: $secondary-font;
+        font-size: 16px;
     }
     & .arrow1{
         width: 45px;
         height: 45px;
         background-color: $primary-light;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flexColumn;
         border-radius: 50%;
+        margin-bottom: 53px;
 
         & img{
             width: 20px;

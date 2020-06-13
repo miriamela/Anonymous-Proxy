@@ -1,0 +1,47 @@
+.info{
+    height: 376px;
+    padding: 0 15px 0 15px;
+    & .insomnia{
+        //border: 1px solid green;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 14px;
+        text-transform: capitalize;
+        color: $tertiary-light-blue;
+        line-height: 30px;
+        margin-top: 30px;
+        margin-bottom: 1px;
+    }
+    & .window{
+        //border: 1px solid red;
+        font-family: $primary-font;
+        text-transform: capitalize;
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 15px;;
+    }
+    & .paragraph{
+        //border: 1px solid yellow;
+        font-family: $secondary-font;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+        text-align: justify;
+        color: $secondary-dark-grey;
+        margin-bottom: 30px;
+    }
+    & .button1{
+        width: 76px;
+        height: 45px;
+        border: 2px solid $primary-orange;
+        border-radius: 22.5px;
+        margin-bottom: 45px;
+        @include flexColumn;
+        & h2{
+            color: $primary-orange;
+            font-family: $secondary-font;
+            font-weight: 400;
+        }
+    }
+    
+}   

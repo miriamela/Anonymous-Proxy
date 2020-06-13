@@ -10,3 +10,19 @@
     }
     
 }
+@mixin footerMmenusMobile{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: $secondary-font;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+
+}
+
+@mixin flexColumn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
