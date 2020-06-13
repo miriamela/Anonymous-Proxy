@@ -4,6 +4,7 @@
     padding-left: 15px;
     padding-right: 15px;
     background-color: $secondary-light-blue;
+    
     & .title{
         margin-top: 30px;
         margin-bottom: 45px;
@@ -15,6 +16,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
+        align-self: center;
+        text-align: center;
+
         & .article-title{
             //border: 1px solid red;
             grid-column: span 3;
@@ -28,15 +32,15 @@
         & .article-paragraph{
             //border: 1px solid blue;
             grid-column: span 3;
-            text-align: center;
-            width:180px;
+            width: 180px;
             height: 63px;
             font-family: $secondary-font;
             font-size: 18px;
-            margin-bottom: 45px;
             line-height: 30px;
+            margin-bottom: 45px;
         }
     }
+    
     & .button2{
         width: 184px;
         height: 45px;
@@ -50,6 +54,72 @@
             font-weight: 500;
             color: $primary-light;
         }
+    }
+    @include tablet{
+        height: 397px;
+        padding-left: 39px;
+        padding-right: 39px;
+        & .title{
+            font-size: 26px;
+            line-height: 45px;
+        }
+        & .articles{
+            margin-bottom: 60px;
+            & .article-title{
+                font-size: 24px;
+            }
+            & .article-paragraph{
+                font-size: 20px;
+                width: 212.3px;
+                height: 68px;
+            }
+            & .article-title.first{
+                grid-column: 1;
+                grid-row: 1;
+            }
+            & .article-title.second{
+                grid-column: 2;
+                grid-row: 1;
+            }
+            & .article-title.third{
+                grid-column: 3;
+                grid-row: 1;
+            }
+            & .article-paragraph.first{
+                grid-column: 1;
+                grid-row: 2;
+                margin: 0;
+            }
+            & .article-paragraph.second{
+                grid-column: 2;
+                grid-row: 2;
+                margin: 0;
+            }
+            & .article-paragraph.third{
+                grid-column: 3;
+                grid-row: 2;
+                margin: 0;
+            }
+        }
+        & .button2{
+            width: 210px;
+        }
+
+    }
+    @include desktop{
+        height: 427px;
+        padding-left: 85px;
+        padding-right: 85px;
+        & .title{
+            font-size: 32px;
+            margin-top: 60px;
+            font-size: 32px;
+        }
+        & .articles .article-paragraph{
+            width: 353.8px;
+
+        }
+
     }
 
 }

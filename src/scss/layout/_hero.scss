@@ -12,7 +12,6 @@
         border: 1px solid green;
         text-align: center;
         color: $primary-light;
-        font-weight: bold;
         font-size: 42px;
         font-family: $primary-font;
         text-transform: uppercase;
@@ -44,6 +43,34 @@
             width: 20px;
             height: 12px;
         }
+    }
+
+    @include tablet{
+        height: 768px;
+        & h1{
+            font-size: 80px;
+            line-height: 106px;
+            margin-bottom: 20px;
+        }
+        & h2{
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        & .arrow1{
+            margin-bottom: 45px;
+        }
+
+    }
+    @include desktop{
+        & h1{
+            font-size: 100px;
+            margin-bottom: 0;
+        }
+        & .arrow1{
+            margin-bottom: 13px;
+        }
+
+
     }
 }
     

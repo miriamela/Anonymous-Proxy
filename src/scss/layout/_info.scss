@@ -18,7 +18,7 @@
         text-transform: capitalize;
         font-size: 24px;
         line-height: 30px;
-        margin-bottom: 15px;;
+        margin-bottom: 15px;
     }
     & .paragraph{
         //border: 1px solid yellow;
@@ -40,8 +40,40 @@
         & h2{
             color: $primary-orange;
             font-family: $secondary-font;
+            font-size: 20px;
+            line-height: 45px;
             font-weight: 400;
         }
     }
-    
+    @include tablet{
+        padding-left: 39px;
+        padding-right: 39px;
+        & .window{
+            font-size: 26px;
+            line-height: 45px;
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+        & .paragraph{
+            font-size: 20px;
+        }
+        & .button1{
+            width: 91px;
+            margin-bottom: 60px;
+            
+        }
+    }
+    @include desktop{
+        padding-left: 275px;
+        padding-right: 275px;
+        & .insomnia{
+            font-size: 16px;
+        }
+        & .window{
+            font-size: 32px;
+        }
+        & .button1{
+            width: 160px;
+        }
+    }
 }   
