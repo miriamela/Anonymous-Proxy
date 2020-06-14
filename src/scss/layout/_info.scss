@@ -46,8 +46,7 @@
         }
     }
     @include tablet{
-        padding-left: 39px;
-        padding-right: 39px;
+        padding: 0 39px 0 39px;
         & .window{
             font-size: 26px;
             line-height: 45px;
@@ -64,8 +63,7 @@
         }
     }
     @include desktop{
-        padding-left: 275px;
-        padding-right: 275px;
+        padding: 0 275px 0 275px;
         & .insomnia{
             font-size: 16px;
         }
