@@ -1,6 +1,7 @@
 .info{
+    //border: 1px solid green;
     height: 376px;
-    padding: 0 15px 0 15px;
+    padding: 30px 15px 45px 15px;
     & .insomnia{
         //border: 1px solid green;
         font-family: $secondary-font;
@@ -9,7 +10,6 @@
         text-transform: capitalize;
         color: $tertiary-light-blue;
         line-height: 30px;
-        margin-top: 30px;
         margin-bottom: 1px;
     }
     & .window{
@@ -35,8 +35,13 @@
         height: 45px;
         border: 2px solid $primary-orange;
         border-radius: 22.5px;
-        margin-bottom: 45px;
         @include flexColumn;
+        transition: all;
+        transition-duration: .3s;
+        &:hover{
+            width: 94px;
+            height: 50px;
+        }
         & h2{
             color: $primary-orange;
             font-family: $secondary-font;
@@ -46,24 +51,29 @@
         }
     }
     @include tablet{
-        padding: 0 39px 0 39px;
+        height: 330px;
+        padding: 30px 39px 60px 39px;
         & .window{
             font-size: 26px;
             line-height: 45px;
-            font-size: 20px;
             margin-bottom: 30px;
         }
         & .paragraph{
             font-size: 20px;
         }
         & .button1{
-            width: 91px;
-            margin-bottom: 60px;
-            
+            width: 91px;  
+            transition: all;
+            transition-duration: .3s;
+            &:hover{
+                width: 106px;
+                height: 50px;
+            }          
         }
     }
     @include desktop{
-        padding: 0 275px 0 275px;
+        height: 360px;
+        padding: 60px 275px 60px 275px;
         & .insomnia{
             font-size: 16px;
         }
@@ -72,6 +82,12 @@
         }
         & .button1{
             width: 160px;
+            transition: all;
+            transition-duration: .3s;
+            &:hover{
+                width: 175px;
+                height: 50px;
+            }
         }
     }
 }   

@@ -1,6 +1,6 @@
 .footer{
     height: 465px;
-    padding:0 15px 0 15px;
+    padding:0 15px 45px 15px;
     background-color: $secondary-dark-blue;
     color: $primary-light;
     & .arrow2{
@@ -18,13 +18,10 @@
     & .flex{
         //border: 1px solid yellow;
         @include flexColumn;
-        
-
         & .article-menu{
             @include footerMmenusMobile;
             //border: 1px solid green;
-            height: 150px;
-            
+            height: 150px;   
         }
         & .social-menu{
             @include footerMmenusMobile;
@@ -33,7 +30,6 @@
             margin-bottom: 30px;
             height: 90px;
         }
-       
         & .copy{
             @include footerMmenusMobile;
             font-size: 14px;
@@ -49,7 +45,7 @@
     }
     @include tablet{
         height: 240px;
-        padding:0 39px 0 39px;
+        padding:0 39px 45px 39px;
         & .flex{
         flex-direction: row;
         justify-content: space-evenly;
@@ -76,7 +72,7 @@
 
     }
     @include desktop{
-        padding: 0 370px 0 370px;
+        padding: 0 370px 45px 370px;
     }
    
 }

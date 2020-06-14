@@ -1,12 +1,13 @@
 .purchase{
+    //border: 1px solid red;
     height: 624px;
-    padding: 0 15px 0 15px;
+    padding: 30px 15px 60px 15px;
     background-color: $secondary-light-blue;
     
     & .title{
-        margin-top: 30px;
-        margin-bottom: 45px;
+        //border: 1px solid green;
         text-align: center;
+        margin-bottom: 45px;
     }
 
     & .articles{
@@ -44,18 +45,26 @@
         height: 45px;
         background-color: $primary-orange;
         border-radius: 22.5px;
-        margin-bottom: 60px;
         margin: 0 auto;
         @include flexColumn;
+        transition: all;
+        transition-duration: .4s;
+        &:hover{
+            width: 300px;
+        }
         & h3{
             font-family: $secondary-font;
             font-weight: 500;
             color: $primary-light;
+            transition:all;
+            &:hover{
+                color: $primary-dark;
+            }
         }
     }
     @include tablet{
         height: 397px;
-        padding:0 39px 0 39px;
+        padding:30px 39px 60px 39px;
         & .title{
             font-size: 26px;
             line-height: 45px;
@@ -100,19 +109,43 @@
         }
         & .button2{
             width: 210px;
+            transition: all;
+            transition-duration: .4s;
+            &:hover{
+            width: 326px;
+            }
+            & h3{
+                transition: all;
+                &:hover{
+                color: $primary-dark;
+                }
+            }
         }
 
     }
     @include desktop{
         height: 427px;
-        padding: 0 85px 0 85px;
+        padding:  60px 85px 60px 85px;
         & .title{
             font-size: 32px;
-            margin-top: 60px;
         }
         & .articles .article-paragraph{
             width: 353.8px;
 
+        }
+        & .button2{
+            width: 255px;
+            transition: all;
+            transition-duration: .4s;
+            &:hover{
+                width: 371px;
+            }
+            & h3{
+                transition: all;
+                &:hover{
+                color: $primary-dark;
+                }
+            }
         }
 
     }

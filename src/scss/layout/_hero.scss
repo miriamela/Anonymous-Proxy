@@ -1,6 +1,7 @@
 .hero{
     height: 568px;
     width:100%;
+    padding: 284px 15px 53px 15px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -8,7 +9,7 @@
     @include flexColumn;
     justify-content: flex-end;
     align-items: center;
-    & h1{
+    & .main-title{
         //border: 1px solid green;
         text-align: center;
         color: $primary-light;
@@ -16,19 +17,21 @@
         font-family: $primary-font;
         text-transform: uppercase;
         line-height: 55px;
+        margin-top: 0;
         margin-bottom: 10px;
 
         & span{
             display: block;
         } 
     }
-    & h2{
+    & .main-subtitle{
         display: block;
         text-align: center;
         //border: 1px solid green;
         color: $primary-light;
         margin-bottom: 45px;
         font-family: $secondary-font;
+        font-weight: 400;
         font-size: 16px;
     }
     & .arrow1{
@@ -37,8 +40,6 @@
         background-color: $primary-light;
         @include flexColumn;
         border-radius: 50%;
-        margin-bottom: 53px;
-
         & img{
             width: 20px;
             height: 12px;
@@ -47,30 +48,23 @@
 
     @include tablet{
         height: 768px;
-        & h1{
+        padding: 384px 39px 45px 39px;
+        & .main-title{
             font-size: 80px;
             line-height: 106px;
             margin-bottom: 20px;
         }
-        & h2{
+        & .main-subtitle{
             font-size: 24px;
             margin-bottom: 30px;
         }
-        & .arrow1{
-            margin-bottom: 45px;
-        }
-
     }
     @include desktop{
-        & h1{
+        padding: 384px 275px 13px 275px;
+        & .main-title{
             font-size: 100px;
             margin-bottom: 0;
         }
-        & .arrow1{
-            margin-bottom: 13px;
-        }
-
-
     }
 }
     
