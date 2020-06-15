@@ -9,7 +9,6 @@
     @include flexColumn;
     justify-content: flex-end;
     & .main-title{
-        //border: 1px solid green;
         text-align: center;
         color: $primary-light;
         font-size: 42px;
@@ -26,7 +25,6 @@
     & .main-subtitle{
         display: block;
         text-align: center;
-        //border: 1px solid green;
         color: $primary-light;
         margin-bottom: 45px;
         font-family: $secondary-font;
