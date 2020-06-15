@@ -1,14 +1,13 @@
 .hero{
     height: 100vh;
     width:100%;
-    padding: 284px 15px 53px 15px;
     background-image: url(../images/cover.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    padding: 284px 15px 53px 15px;
     @include flexColumn;
     justify-content: flex-end;
-    align-items: center;
     & .main-title{
         //border: 1px solid green;
         text-align: center;
